@@ -48,24 +48,103 @@
                     </div>
                 </div>
             </div>
+            <!--Cuadrado-->
             <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
                 <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-                    <h1><a href="https://soterramirez.dev" rel="dofollow">Figuras Geométricas</a></h1>
+                    <h1><a href="https://soterramirez.dev" rel="dofollow">Cuadrado</a></h1>
                 </div>
                 <div class="formbg-outer">
                     <div class="formbg">
                         <div class="formbg-inner padding-horizontal--48">
-                            <span class="padding-bottom--15">Calculo de un cuadrado</span>
+                            <span class="padding-bottom--15">¿Cuánto mide cada lado de cuadrado?</span>
+                            <figure>
+                                <img src="../images/figure/Cuadrado.svg" alt="Cuadrado">
+                            </figure>
                             <form id="stripe-login">
                                 <div class="field padding-bottom--24">
-                                    <label for="number" for="InputCuadrado">Área y Perímetro</label>
-                                    <input id="InputCuadrado" type="number" name="number" >
+                                    <label for="number" for="square_input">cm</label>
+                                    <input id="square_input" type="number" name="number" >
                                 </div>
                                 <div class="field padding-bottom--24">
-                                    <input type="button" name="button" value="Calcular Área" onclick="calcularAreaCuadrado()">
+                                    <input type="button" name="button" value="Calcular Área" onclick="getSquareArea()">
                                 </div>
                                 <div class="field padding-bottom--24">
-                                    <input type="button" name="button" value="Calcular Perímetro" onclick="calcularPerimetroCuadrado()">
+                                    <input type="button" name="button" value="Calcular Perímetro" onclick="getSquarePerimeter()">
+                                </div>
+                                <div class="figure__results-container">
+                                    <p id="area_square_result" class="figure__results"></p>
+                                    <p id="perimeter_square_result" class="figure__results"></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Triangulo-->
+            <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+                <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+                    <h1><a href="https://soterramirez.dev" rel="dofollow">Triángulo</a></h1>
+                </div>
+                <div class="formbg-outer">
+                    <div class="formbg">
+                        <div class="formbg-inner padding-horizontal--48">
+                            <span class="padding-bottom--15">¿Cuánto mide cada lado de tu triángulo?</span>
+                            <figure>
+                                <img src="../images/figure/Triangulo.svg" alt="Triángulo">
+                            </figure>
+                            <form id="stripe-login">
+                                <div class="field padding-bottom--24">
+                                    <label for="number" for="triangle_input_sideA">Lado A</label>
+                                    <input id="triangle_input_sideA" type="number" name="number">
+                                    <label for="number" for="triangle_input_sideB">Lado B</label>
+                                    <input id="triangle_input_sideB" type="number" name="number">
+                                    <label for="number" for="triangle_input_sideC">Base</label>
+                                    <input id="triangle_input__Base" type="number" name="number">
+                                </div>
+                                <div class="field padding-bottom--24">
+                                    <input type="button" name="button" value="Calcular Área" onclick="getTriangleArea()">
+                                </div>
+                                <div class="field padding-bottom--24">
+                                    <input type="button" name="button" value="Calcular Perímetro"
+                                        onclick="getTrianglePerimeter()">
+                                </div>
+                                <div class="figure__results-container">
+                                    <p id="area_triangle_result" class="figure__results"></p>
+                                    <p id="perimeter_triangle_result" class="figure__results"></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Circulo-->
+            <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+                <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+                    <h1><a href="https://soterramirez.dev" rel="dofollow">Círculo</a></h1>
+                </div>
+                <div class="formbg-outer">
+                    <div class="formbg">
+                        <div class="formbg-inner padding-horizontal--48">
+                            <span class="padding-bottom--15">¿Cuánto mide el radio de tu círculo?</span>
+                            <figure>
+                                <img src="../images/figure/Circulo.svg" alt="Círculo">
+                            </figure>
+                            <form id="stripe-login">
+                                <div class="field padding-bottom--24">
+                                    <label for="number" for="circle_input">Radio</label>
+                                    <input id="circle_input" type="number" name="number">
+                                </div>
+                                <div class="field padding-bottom--24">
+                                    <input type="button" name="button" value="Calcular Área" onclick="getCircleArea()">
+                                </div>
+                                <div class="field padding-bottom--24">
+                                    <input type="button" name="button" value="Calcular Perímetro"
+                                        onclick="getCirclePerimeter()">
+                                </div>
+                                <div class="figure__results-container">
+                                    <p id="area_circle_result" class="figure__results"></p>
+                                    <p id="perimeter_circle_result" class="figure__results"></p>
                                 </div>
                             </form>
                         </div>

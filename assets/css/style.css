@@ -29,6 +29,11 @@ a {
     color: #5469d4;
     text-decoration: unset;
 }
+p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
 .root {
     background: #fff;
     display: flex;
@@ -231,7 +236,7 @@ a.ssolink {
   100% {
     transform: translateX(0px);
   }
-} 
+}
 
 @keyframes animationRightLeft {
   0% {
@@ -243,4 +248,26 @@ a.ssolink {
   100% {
     transform: translateX(0px);
   }
-} 
+}
+figure{
+  /* diseño de 25px de tamaño */
+  width: 90px;
+  height: 90px;
+  /* Centrar el contenido */
+  margin: auto;
+  /* Cuando este en version mobile, se ajusta el tamaño */
+  @media (max-width: 600px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+.figure__results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 448px;
+  background-color: #54d4bf;
+}
